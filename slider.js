@@ -38,8 +38,20 @@ const prevSlide = () => {
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
-
-
-
 document.createElement('figure');
 document.createElement('figcaption');
+
+let fruit = ['слива','банан','груша','апельсин','яблоко',];
+
+fruit.forEach(function (item,i) { 
+  console.log(`Элемент ${item} = ${i}`);
+})
+
+function sumi(x,y) {
+  let result = x + y;
+  return result;
+}
+
+let prik = sumi(sumi(1, 5), 10);
+
+console.log(prik);
