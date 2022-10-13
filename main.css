@@ -4,6 +4,7 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper1 {
@@ -18,6 +19,11 @@ html {
 
 * {
   box-sizing: border-box;
+}
+
+.default-container {
+  max-width: 1716px;
+  margin: auto;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -53,8 +59,6 @@ a:active {
   }
 
 .menu {
- background-color: rgb(0, 0, 0);
- background-size: 100%;
  text-align: justify;
 }
 
@@ -63,6 +67,8 @@ a:active {
 }
 
 .stic {
+  background-color: rgb(0, 0, 0);
+  background-size: 100%;
   position: sticky; /*при гортанні сторінки хедер фіксірується */
   width: 100%;
   top: 0; 
@@ -114,17 +120,12 @@ hr {
 
 
 .inf {
-  background-color: rgba(77,77,77,1);
   display: flex;
   justify-content: space-around;
-  background: rgba(21,0,255,1);
-  background: -moz-linear-gradient(left, rgba(21,0,255,1) 0%, rgba(21,0,255,1) 4%, rgba(0,4,255,1) 23%, rgba(24,38,74,1) 53%, rgba(0,0,0,1) 54%, rgba(3,0,3,1) 56%, rgba(225,0,255,1) 78%, rgba(225,0,255,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(21,0,255,1)), color-stop(4%, rgba(21,0,255,1)), color-stop(23%, rgba(0,4,255,1)), color-stop(53%, rgba(24,38,74,1)), color-stop(54%, rgba(0,0,0,1)), color-stop(56%, rgba(3,0,3,1)), color-stop(78%, rgba(225,0,255,1)), color-stop(100%, rgba(225,0,255,1)));
-  background: -webkit-linear-gradient(left, rgba(21,0,255,1) 0%, rgba(21,0,255,1) 4%, rgba(0,4,255,1) 23%, rgba(24,38,74,1) 53%, rgba(0,0,0,1) 54%, rgba(3,0,3,1) 56%, rgba(225,0,255,1) 78%, rgba(225,0,255,1) 100%);
-  background: -o-linear-gradient(left, rgba(21,0,255,1) 0%, rgba(21,0,255,1) 4%, rgba(0,4,255,1) 23%, rgba(24,38,74,1) 53%, rgba(0,0,0,1) 54%, rgba(3,0,3,1) 56%, rgba(225,0,255,1) 78%, rgba(225,0,255,1) 100%);
-  background: -ms-linear-gradient(left, rgba(21,0,255,1) 0%, rgba(21,0,255,1) 4%, rgba(0,4,255,1) 23%, rgba(24,38,74,1) 53%, rgba(0,0,0,1) 54%, rgba(3,0,3,1) 56%, rgba(225,0,255,1) 78%, rgba(225,0,255,1) 100%);
+}
+
+.inf2_0 {
   background: linear-gradient(to right, rgba(21,0,255,1) 0%, rgba(21,0,255,1) 4%, rgba(0,4,255,1) 23%, rgba(24,38,74,1) 53%, rgba(0,0,0,1) 54%, rgba(3,0,3,1) 56%, rgba(225,0,255,1) 78%, rgba(225,0,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1500ff', endColorstr='#e100ff', GradientType=1 );
 }
 
 .inf img {
@@ -203,9 +204,11 @@ img {
 
 .foto_nav_menu {
   height: 1000px;
-  background-color: hsl(187, 100%, 92%);
 }
 
+.foto_nav_menu2_0 {
+  background-color: hsl(187, 100%, 92%);
+}
 
 .foto_nav_menu a{
   font-size: 30px;
@@ -287,11 +290,14 @@ margin-right: 125px;
 }
 
 .lover_menu2 {
-  background-color: rgb(18, 58, 75);
   height: 400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 0;
+}
+
+.lover_menu2_0 {
+  background-color: rgb(18, 58, 75);
 }
 
 .lover_menu2 img {
@@ -609,15 +615,23 @@ margin-right: 125px;
 
 /* каталог */
 
-.catalog-sort {
-  display: flex ;
-  align-items: baseline;
-  flex-direction: row;
-  justify-content: space-evenly;
+.catalog-parents {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.catalog-parents>h1 {
+  width: 550px;
+  height: 1em;
+  font-size: 32px;
+  font-weight: normal;
 }
 
 .sort-catalog-submit {
-  display: flex ;
-  align-items: baseline;
-
+  width: 550px;
+  padding-top: 30px;
 }
+
+

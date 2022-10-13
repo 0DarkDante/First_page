@@ -55,3 +55,14 @@ function sumi(x,y) {
 let prik = sumi(sumi(1, 5), 10);
 
 console.log(prik);
+
+function showMessage() {
+  alert("surpraize fzfk")
+} 
+
+let btn = document.querySelector("#myBtn");
+btn.onclick = showMessage2;
+
+function showMessage2() {
+  alert("surpraize fzfk");
+}
