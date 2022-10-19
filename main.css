@@ -634,4 +634,52 @@ margin-right: 125px;
   padding-top: 30px;
 }
 
+.catalogLeftcol {
+  float: left; /* Обтекание справа */
+  width: 300px; /* Ширина колонки */
+  text-align: left;
+}
 
+.catalogRightcol {
+  margin-left: 220px;
+}
+
+.inpnumber {
+  width: 80px;
+}
+
+.ch-b2>h3 {
+  padding-left: 42px;
+  margin-bottom: 0px;
+}
+
+.ch-b3 {
+  padding-left: 42px;
+}
+
+.ch-b>ul>li {
+  margin-bottom: 5px;
+}
+
+.ch-b>ul>li::before {
+  size: 1px;
+}
+
+
+.ch-b2>ul>li {
+  margin-bottom: 3px;
+}
+
+.ch-b2>ul {
+  margin-top: 5px;
+}
+
+.ch-b3 h3 {
+  margin-bottom: 7px;
+}
+
+#price {
+  width: 185px;
+  margin-left: 0px;
+  margin-top: 7px;
+}

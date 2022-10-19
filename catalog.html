@@ -87,12 +87,73 @@
               <span><button type="submit">по назві</button></span>
             </div>
       </div>
-      <div class="leftcol">
-       
+
+      <div class="leftcol, catalogLeftcol">
+       <div class="ch-b">
+        <ul>
+          <li> 
+            <a href="/">
+              <span> <input type="checkbox"> Новинка </span>
+              <span>46</span>
+            </a> 
+          </li>
+          <li>
+            <a href="/">
+              <span> <input type="checkbox"> Хіт </span>
+              <span>10</span>
+            </a> 
+          </li>
+        </ul>
+
+        <div class="ch-b2">
+          <h3>Бренд</h3>
+          <ul>
+            <li> 
+              <a href="/">
+                <span> <input type="checkbox"> Nike </span>
+                <span>5</span>
+              </a> 
+            </li>
+            <li>
+              <a href="/">
+                <span> <input type="checkbox"> Adidas </span>
+                <span>2</span>
+              </a> 
+            </li>
+            <li>
+              <a href="/">
+                <span> <input type="checkbox"> joma </span>
+                <span>4</span>
+              </a> 
+            </li>
+            <li>
+              <a href="/">
+                <span> <input type="checkbox"> Puma </span>
+                <span>3</span>
+              </a> 
+            </li>
+          </ul>
+        </div>
+       </div>
+
+       <div class="ch-b3">
+        <h3>Ціна, грн</h3>
+        <span><input type="number" value="0" class="inpnumber"></span>
+        <span>&mdash;</span>
+        <span><input type="number" value="4999" class="inpnumber"></span>
+        <span><input type="submit" value="Ок"></span>
+        
+        <form action="">
+          <input type="range" name="price" id="price" min="0" max="4999" step="10" value="100">
+          <output class=price-output></output> 
+        </form>
+        
+
+       </div>
       </div>
 
-      <div class="rightcoll">
-        
+      <div class="rightcoll, catalogRightcol">
+        <h2>content</h2>
       </div>
     </div>
   </main>
@@ -141,7 +202,7 @@
       </div> 
   </footer>
 
-  <script src="slider.js"></script>
+  <script src="catalog.js"></script>
 </body>
 </div>
 </html>
