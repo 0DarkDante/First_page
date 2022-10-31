@@ -74,6 +74,11 @@ a:active {
   top: 0; 
 }
 
+.stic_catalog {
+  background-color: rgb(0, 0, 0);
+  background-size: 100%;
+}
+
 .elements {
   font-size: 17px;
   font-weight: bolder;
@@ -101,6 +106,12 @@ a:active {
 
 .elementsOne-end {
   float: right;
+  padding-right: 45px;
+}
+
+.elementsOne-end img {
+  height: 11px;
+  width: 12px;
 }
 
 hr {
@@ -122,6 +133,7 @@ hr {
 .inf {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .inf2_0 {
@@ -134,11 +146,16 @@ hr {
   padding-left: 10px;
 }
 
-.inf h4 {
-  width: 100px;
-  float: left;
-  padding-left: 60px;
+.number_phone_wrapper1 img {
+  height: 20px;
+  width: 30px;
+  vertical-align: middle;
+}
 
+.shop_bascet>img {
+  height: 25px;
+  width: 35px;
+  vertical-align: middle;
 }
 
 main {
@@ -627,17 +644,45 @@ margin-right: 125px;
   height: 1em;
   font-size: 32px;
   font-weight: normal;
+  padding-right: 90px;
 }
 
 .sort-catalog-submit {
   width: 550px;
   padding-top: 30px;
+  padding-left: 135px;
+}
+
+.sort-catalog-submit button {
+  height: 30px;
+  background-color: #fff;
+  border: outset 1px rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+.sort-catalog-submit button:hover {
+  color: #575757;
+}
+
+.sort-catalog-submit-one {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.sort-catalog-submit-two {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.sort-catalog-submit-three {
+ border-radius: 0px 7px 7px 0px;
 }
 
 .catalogLeftcol {
   float: left; /* Обтекание справа */
   width: 300px; /* Ширина колонки */
   text-align: left;
+  position: sticky;
+  top: 0;
 }
 
 .catalogRightcol {
@@ -678,8 +723,100 @@ margin-right: 125px;
   margin-bottom: 7px;
 }
 
+.catalog-availability {
+  font-size: 12px;
+  color: rgb(108, 108, 108);
+  margin-bottom: 10px;
+  position: relative;
+  top: -5px;
+}
+
 #price {
   width: 185px;
   margin-left: 0px;
   margin-top: 7px;
 }
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: minmax(370px, auto);
+  margin: 0;
+  margin-bottom: 35px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.item {
+  padding: 10px;
+}
+
+.orderingText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+  margin-top: 10px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  margin-top: 10px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  height: 45px;
+}
+
+.item:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 1%;
+}
+
+.cataloCard-title {
+  
+}
+
+.favorites-text img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: -3px;
+}
+
+
+.favorites-text {
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+.tov_catal {
+  height: 223px;
+  width: 220px;
+}
+
+/* Пагінація */
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  transition: background-color .3s;
+}
+
+.pagination > a:nth-child(8) {
+  padding-left: 0px ;
+  padding-right: 0px;
+}
+
+/* Стиль активной/текущей ссылки */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Добавить серый цвет фона при наведении курсора мыши */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+
