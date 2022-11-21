@@ -165,6 +165,7 @@ hr {
 
 main {
   flex: 1 1 auto;
+  min-height: calc(100vh - 80px);
 }
 
 /* слайдер */
@@ -173,7 +174,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #c9c9c9;
+  background: linear-gradient(4deg, #3a4ece, #ffd026);
   height: 800px;
 }
 
@@ -225,9 +226,9 @@ img {
 /* слайдер */
 
 .foto_nav_menu { 
+  margin: auto;
   position: absolute;
-  top: 287px;
-  left: 125px;
+  top: 287px; left: 0; bottom: 0; right: 0;
 }
 
 .foto_nav_menu2_0 {
@@ -240,13 +241,13 @@ img {
 }
 
 .byts {
-float: left;
-margin-left: 125px;
+  float: left;
+  margin-left: 50px;
 }
 
 .sorok {
-float: right;
-margin-right: 125px;
+  float: right;
+  margin-right: 50px;
 }
 
 .shoes img {
@@ -339,6 +340,10 @@ margin-right: 125px;
   margin-left: -25px;
 }
 
+footer {
+
+}
+
 .footer-cocial {
   margin-top: 112px;
 }
@@ -395,6 +400,13 @@ margin-right: 125px;
 }
 
 /* about_we*/
+.right_about_we {
+  margin-top: 7px;
+}
+
+.right_about_we>p {
+  text-align: left;
+}
 
 .menu-flex {
   display: flex;
@@ -477,9 +489,8 @@ margin-right: 125px;
 }
 
 /* contact */
-
-.menu-flex-contact {
-  margin-bottom: 75px;
+.rightcoll-contact {
+  margin-top: 7px;
 }
 
 .rrc{
@@ -523,6 +534,10 @@ margin-right: 125px;
 
 
 /* delivery */
+.not_pl_delivery {
+  padding-left: 0px;
+  margin-top: 0px;
+}
 
 .rightcol-delivery {
   text-align: left;
@@ -1262,3 +1277,177 @@ margin-right: 125px;
 }
 
 
+/* Adaptiv */
+
+@media screen and (max-width: 1200px) {
+  .shoes img {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .elementsOne {
+    padding: 7px 7px 7px 5px;
+  }
+  
+  .elementsOne-end {
+    padding-right: 15px;
+  }
+
+  .flex-wrapper {
+    height: 588px;
+  }
+
+  .slider-wrapper {
+    height: 555px;
+  }
+
+  .shoes img {
+    margin: 0px;
+    width: 300px;
+  }
+
+  .byts {
+    margin-left: 0px;
+  }
+
+  .sorok {
+    margin-right: 0px;
+  }
+
+  .img_mini_adapt {
+    margin-top: 100px;
+  }
+
+  .img_mini_adapt {
+    margin-top: 90px;
+  }
+
+  .lover_menu2 img {
+    height: 200px;
+    width: 234px;
+    border-radius: 13px;
+  }
+
+  .footer-cocial a>img {
+    margin-right: 5px;
+  }
+
+  .rrc {
+    margin-left: -75px;
+  }
+
+  .rightcol-delivery {
+    font-size: 14px;
+  }
+
+  .right_about_we h1 {
+    font-size: 24px;
+  }
+
+  .right_about_we>p {
+    font-size: 13px;
+  }
+
+  .col-bold {
+    margin-left: -10px;
+    font-size: 17px;
+  }
+
+  .rightcoll>ul>li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .elements {
+    font-size: 14px;
+  }
+
+  .elements a {
+    padding: 11px 10px;
+  }
+
+  .slider-wrapper {
+    height: 450px;
+  }
+
+  .flex-wrapper {
+    height: 470px;
+  }
+
+  .btn {
+    width: 185px;
+    font-size: 20px;
+    padding: 11px 0;
+  }
+
+  .shoes img {
+    width: 200px;
+  }
+
+  .footer-cocial a>img {
+    margin-right: -2px;
+    margin-left: -2px;
+  }
+  
+  .lover_menu2 img {
+    margin: 0px 10px;
+  }
+
+  .rrc {
+    font-size: 12px;
+  }
+
+  .adres {
+    font-size: 12px;
+    margin: 51px 0 0 -5px;
+  }
+
+  .leftcol>ul>li>a {
+    font-size: 15px;
+  }
+
+  .delivery_li_mini_adapt {
+    margin-left: -5px;
+  }
+
+  .not_pl_delivery {
+    margin-top: -16px;
+}
+
+  .one-delivery-inform>h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+  .one-delivery-inform>h2 {
+    font-size: 15px;
+  }
+
+  .two-delivery-inform>h2 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.three-delivery-inform>h2 {
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.right_about_we>p {
+  font-size: 11px;
+}
+
+.col-bold {
+  margin-left: -22px;
+  font-size: 15px;
+}
+
+.rightcoll>ul>li {
+  font-size: 14px;
+}
+}
+
+/* <576px */
